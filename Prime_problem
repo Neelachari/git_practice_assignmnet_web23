@@ -1,0 +1,22 @@
+function checkprime(num){
+    let count=0;
+    for(let i=1;i<=num;i++){
+        if(i%num==0){
+            count++
+        }
+    }
+    if(count!=2){
+       return true
+    }
+    return false
+
+}
+
+let output=checkprime(47)
+
+if(output==true){
+    console.log("prime Number")
+}
+else{
+    console.log("Not a Prime Number")
+}
